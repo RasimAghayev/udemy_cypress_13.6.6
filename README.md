@@ -1,510 +1,218 @@
-[Cypress V13.6.6 -Docker + Cucumber + Jenkins - MAR'24 Course](https://www.udemy.com/course/cypress-ultimate-course/)
+Course content
+--------------
 
+### Section 1: Introduction to Cypress
 
-### Introduction to Cypress6 lectures • 13min
+6 / 6 | 13 min 6 of 6 lectures completed 13 min 
+    
+    1. Important Note Before Starting Course - 1 min
+    2. MUST WATCH - Before Enrolling the Course - 1 min
+    3. Course Introduction - 2 min
+    4. What is Cypress ? - 5 min
+    5. Cypress Architecture - 2 min
+    6. Amazing Cypress Features - 3 min
 
-*   Important Note Before Starting Course
-    
-    00:16
-    
-*   MUST WATCH - Before Enrolling the Course
-    
-    Preview      01:11
-    
-*   Course Introduction
-    
-    Preview      02:16
-    
-*   What is Cypress ?
-    
-    Preview      04:36
-    
-*   Cypress Architecture
-    
-    Preview      01:56
-    
-*   Amazing Cypress Features
-    
-    Preview      02:57
-    
+### Section 2: Cypress Installation & Setup
 
-### Cypress Installation & Setup3 lectures • 7min
+3 / 3 | 7 min 3 of 3 lectures completed 7 min 
+    
+    7. Prerequisites needed for Cypress installation - 3 min 
+    8. Important Note: Cypress Version Update - 1 min
+    9. Installation of Cypress - 4 min
 
-*   Prerequisites needed for Cypress installation
-    
-    Preview      02:51
-    
-*   Important Note: Cypress Version Update
-    
-    00:10
-    
-*   Installation of Cypress
-    
-    Preview      03:47
-    
+### Section 3: Test Runner
 
-### Test Runner2 lectures • 8min
+0 / 2 | 8 min 0 of 2 lectures completed  8 min 
+    
+    10. How to use Test Runner to execute cypress tests - 6 min
+    11. Cross browser testing - 2 min
 
-*   How to use Test Runner to execute cypress tests
-    
-    Preview      05:40
-    
-*   Cross browser testing
-    
-    Preview      02:20
-    
+### Section 4: Folder Structure
 
-### Folder Structure1 lecture • 3min
+0 / 1 | 3 min 0 of 1 lecture completed 3 min 
+    
+    12. Folder Structure in Cypress - 3 min
 
-*   Folder Structure in Cypress
-    
-    Preview      02:42
-    
+### Section 5: Locator strategy & Write First test in Cypress
 
-### Locator strategy & Write First test in Cypress6 lectures • 38min
+0 / 6 | 37 min 0 of 6 lectures completed  37 min 
+    
+    13. Locator Strategies - 9 min
+    14. Using Test Runner to Locate elements - 5 min
+    15. Plugin to ease locator finding process - 4 min
+    16. Important Note on Cypress Intellisense - 1 min
+    17. Write First test using Cypress - 19 min
+    18. Code - First Script - 1 min
 
-*   Locator Strategies
-    
-    09:00
-    
-*   Using Test Runner to Locate elements
-    
-    05:08
-    
-*   Plugin to ease locator finding process
-    
-    04:23
-    
-*   Important Note on Cypress Intellisense
-    
-    00:16
-    
-*   Write First test using Cypress
-    
-    Preview      18:34
-    
-*   Code - First Script
-    
-    00:08
-    
+### Section 6: Command Line Interface to run Cypress Tests
 
-### Command Line Interface to run Cypress Tests2 lectures • 19min
+0 / 2 | 19 min 0 of 2 lectures completed 19 min 
+    
+    19. Understanding Importance of Command Line - 2 min
+    20. Executing test from Command Line - 18 min
 
-*   Understanding Importance of Command Line
-    
-    01:35
-    
-*   Executing test from Command Line
-    
-    17:31
-    
+### Section 7: Handling Basic UI Elements
 
-### Handling Basic UI Elements6 lectures • 35min
+0 / 6 | 35 min 0 of 6 lectures completed 35 min 
+    
+    21. Radio Button - 9 min
+    22. Code - RadioButton - 1 min
+    23. Check boxes - 6 min
+    24. Code - CheckBoxes - 1 min
+    25. Dropdowns - 19 min
+    26. Code - DropDowns - 1 min
 
-*   Radio Button
-    
-    08:59
-    
-*   Code - RadioButton
-    
-    00:12
-    
-*   Check boxes
-    
-    06:01
-    
-*   Code - CheckBoxes
-    
-    00:08
-    
-*   Dropdowns
-    
-    18:59
-    
-*   Code - DropDowns
-    
-    00:17
-    
+### Section 8: Handling Advanced UI Elements
 
-### Handling Advanced UI Elements10 lectures • 50min
+0 / 10 | 50 min 0 of 10 lectures completed 50 min 
+    
+    27. Handling all types of Alerts - 18 min
+    28. Code - Alerts - 1 min
+    29. Handling Web Tables - 13 min
+    30. Code - WebTables - 1 min
+    31. Handling Iframes - 7 min
+    32. Code - iFrames - 1 min
+    33. Work around to use Xpath in Cypress - 7 min
+    34. Code - Xpath - 1 min
+    35. Handling Browser controls - 4 min
+    36. Code - BrowserControls - 1 min
 
-*   Handling all types of Alerts
-    
-    18:08
-    
-*   Code - Alerts
-    
-    00:31
-    
-*   Handling Web Tables
-    
-    13:06
-    
-*   Code - WebTables
-    
-    00:22
-    
-*   Handling Iframes
-    
-    06:58
-    
-*   Code - iFrames
-    
-    00:06
-    
-*   Work around to use Xpath in Cypress
-    
-    06:30
-    
-*   Code - Xpath
-    
-    00:08
-    
-*   Handling Browser controls
-    
-    03:44
-    
-*   Code - BrowserControls
-    
-    00:07
-    
+### Section 9: Framework Designing - Part 1
 
-### Framework Designing - Part 110 lectures • 40min
+0 / 10 | 40 min 0 of 10 lectures completed 40 min 
+    
+    37. Hooks - Part 1 - 4 min
+    38. Code - Hooks - Part 1 - 1 min
+    39. Hooks - Part 2 - 9 min
+    40. Code - Hooks - Part 2 - 1 min
+    41. How to use test data with Fixtures - 6 min
+    42. Code - Fixtures - 1 min
+    43. Excel - Reading Data - 13 min
+    44. Code - Excel reading data - 1 min
+    45. Csv - Reading Data - 7 min
+    46. Code - CSV reading data - 1 min
 
-*   Hooks - Part 1
-    
-    03:56
-    
-*   Code - Hooks - Part 1
-    
-    00:13
-    
-*   Hooks - Part 2
-    
-    08:46
-    
-*   Code - Hooks - Part 2
-    
-    00:16
-    
-*   How to use test data with Fixtures
-    
-    05:36
-    
-*   Code - Fixtures
-    
-    00:19
-    
-*   Excel - Reading Data
-    
-    13:26
-    
-*   Code - Excel reading data
-    
-    00:42
-    
-*   Csv - Reading Data
-    
-    06:45
-    
-*   Code - CSV reading data
-    
-    00:21
-    
+### Section 10: Framework Designing - Part 2
 
-### Framework Designing - Part 23 lectures • 17min
+0 / 3 | 17 min 0 of 3 lectures completed 17 min 
+    
+    47. How to create Custom commands - 5 min
+    48. Code - CustomCommands - 1 min
+    49. Global Configurations setup - 11 min
 
-*   How to create Custom commands
-    
-    05:22
-    
-*   Code - CustomCommands
-    
-    00:12
-    
-*   Global Configurations setup
-    
-    11:13
-    
+### Section 11: Framework Designing - Part 3
 
-### Framework Designing - Part 33 lectures • 18min
+0 / 3 | 18 min 0 of 3 lectures completed 18 min 
+    
+    50. Page Object Model Importance - 2 min
+    51. Implementing Page Object Model with current framework - 16 min
+    52. Code - PageObjectModel - 1 min
 
-*   Page Object Model Importance
-    
-    02:13
-    
-*   Implementing Page Object Model with current framework
-    
-    15:48
-    
-*   Code - PageObjectModel
-    
-    00:16
-    
+### Section 12: Framework Designing - Part 4
 
-### Framework Designing - Part 42 lectures • 11min
+0 / 2 | 11 min 0 of 2 lectures completed 11 min 
+    
+    53. Dashboard featured in Cypress and its Limitations - 5 min
+    54. Dashboard setup - 6 min
 
-*   Dashboard featured in Cypress and its Limitations
-    
-    05:08
-    
-*   Dashboard setup
-    
-    05:37
-    
+### Section 13: Framework Designing - Part 5
 
-### Framework Designing - Part 53 lectures • 26min
+0 / 3 | 26 min 0 of 3 lectures completed 26 min 
+    
+    55. Advantages of using Mochawesome Report - 3 min
+    56. Setup Mochawesome Report - 15 min
+    57. Add Failed test screenshot in Mochawesome report - 8 min
 
-*   Advantages of using Mochawesome Report
-    
-    02:38
-    
-*   Setup Mochawesome Report
-    
-    15:03
-    
-*   Add Failed test screenshot in Mochawesome report
-    
-    07:49
-    
+### Section 14: API Testing
 
-### API Testing7 lectures • 20min
+0 / 7 | 20 min 0 of 7 lectures completed 20 min 
+    
+    58. What is API testing ? - 3 min
+    59. Rest API Introduction - 2 min
+    60. GET Method - 7 min
+    61. POST Method - 4 min
+    62. PUT Method - 3 min
+    63. DELETE Method - 2 min
+    64. Code - API Testing - 1 min
 
-*   What is API testing ?
-    
-    Preview      02:30
-    
-*   Rest API Introduction
-    
-    Preview      02:09
-    
-*   GET Method
-    
-    Preview      06:55
-    
-*   POST Method
-    
-    03:46
-    
-*   PUT Method
-    
-    02:38
-    
-*   DELETE Method
-    
-    02:01
-    
-*   Code - API Testing
-    
-    00:22
-    
+### Section 15: Mocks and Stubs
 
-### Mocks and Stubs4 lectures • 26min
+0 / 4 | 26 min 0 of 4 lectures completed 26 min 
+    
+    65. Advantages of using Mocks - 3 min
+    66. Using mocks in real time example - 23 min
+    67. Code: Mock Test - 1 min
+    68. Cypress - Project Download - 1 min
+    Resources    
+    *   Cypress-Udemy-Course-main.zip
 
-*   Advantages of using Mocks
-    
-    03:16
-    
-*   Using mocks in real time example
-    
-    22:38
-    
-*   Code: Mock Test
-    
-    00:20
-    
-*   Cypress - Project Download
-    
-    00:14
-    
+### Section 16: Docker Integration with Cypress
 
-### Docker Integration with Cypress12 lectures • 36min
+0 / 12 | 36 min 0 of 12 lectures completed 36 min 
+    
+    69. What is Docker - 3 min
+    70. How to Install Docker - 1 min
+    71. Additional Work after Docker Installation on Windows - 1 min
+    72. Important Note: Cypress Version Update - 1 min
+    73. Running Cypress Tests inside Docker - 8 min
+    74. Windows vs Mac code to execute Cypress test inside docker - 1 min
+    75. What is Docker File & Docker Compose - 5 min
+    76. Implementing Docker File & Docker Compose - 13 min
+    77. Code - DockerFile & DockerCompose - 1 min
+    78. Volume Mapping in Docker - 4 min
+    79. Code - Volume Mapping - 1 min
+    80. Cypress Docker - Project Download - 1 min
+    Resources    
+    *   Cypress-Docker-Udemy-main.zip
 
-*   What is Docker
-    
-    Preview      03:03
-    
-*   How to Install Docker
-    
-    Preview      01:25
-    
-*   Additional Work after Docker Installation on Windows
-    
-    00:08
-    
-*   Important Note: Cypress Version Update
-    
-    00:10
-    
-*   Running Cypress Tests inside Docker
-    
-    Preview      08:00
-    
-*   Windows vs Mac code to execute Cypress test inside docker
-    
-    00:33
-    
-*   What is Docker File & Docker Compose
-    
-    05:02
-    
-*   Implementing Docker File & Docker Compose
-    
-    13:21
-    
-*   Code - DockerFile & DockerCompose
-    
-    00:23
-    
-*   Volume Mapping in Docker
-    
-    03:38
-    
-*   Code - Volume Mapping
-    
-    00:09
-    
-*   Cypress Docker - Project Download
-    
-    00:14
-    
+### Section 17: Cucumber - BDD Framework
 
-### Cucumber - BDD Framework13 lectures • 53min
+0 / 13 | 53 min 0 of 13 lectures completed 53 min 
+    
+    81. Cucumber Introduction - 2 min
+    82. Cucumber Installation - 5 min
+    83. Important Note: Cypress Version Update - 1 min
+    84. Writing First Test in Cucumber - 15 min
+    85. Code - First Test in Cucumber - 1 min
+    86. How to Synchronize Feature File and Step Definition File - 3 min
+    87. Plugin to generate Step Definition file - 2 min
+    88. Handling test data in Cucumber - 5 min
+    89. Code - DataDriven - 1 min
+    90. Setup HTML Report - 8 min
+    91. Add Failed test screenshot in HTML Report - 9 min
+    92. Code - Screenshot in Cucumber report - 2 min
+    93. Cypress - Cucumber Project Download - 1 min
+    Resources    
+    *   Cypress-Cucumber-Udemy-main.zip     
 
-*   Cucumber Introduction
-    
-    Preview      02:15
-    
-*   Cucumber Installation
-    
-    Preview      04:32
-    
-*   Important Note: Cypress Version Update
-    
-    00:10
-    
-*   Writing First Test in Cucumber
-    
-    Preview      15:23
-    
-*   Code - First Test in Cucumber
-    
-    00:32
-    
-*   How to Synchronize Feature File and Step Definition File
-    
-    03:26
-    
-*   Plugin to generate Step Definition file
-    
-    02:22
-    
-*   Handling test data in Cucumber
-    
-    05:13
-    
-*   Code - DataDriven
-    
-    01:03
-    
-*   Setup HTML Report
-    
-    07:30
-    
-*   Add Failed test screenshot in HTML Report
-    
-    09:02
-    
-*   Code - Screenshot in Cucumber report
-    
-    01:40
-    
-*   Cypress - Cucumber Project Download
-    
-    00:14
-    
+### Section 18: CICD Integration
 
-### CICD Integration6 lectures • 39min
+0 / 6 | 39 min 0 of 6 lectures completed 39 min 
+    
+    94. What is CICD ? - 6 min
+    95. Jenkins Introduction - 3 min
+    96. Prerequisite before Installing Jenkins - 1 min
+    97. Installing Jenkins - 5 min
+    98. Creation of Nonparameterized Project - 15 min
+    99. Creation of Parameterized Project - 10 min
 
-*   What is CICD ?
-    
-    Preview      05:30
-    
-*   Jenkins Introduction
-    
-    Preview      02:45
-    
-*   Prerequisite before Installing Jenkins
-    
-    00:44
-    
-*   Installing Jenkins
-    
-    Preview      05:26
-    
-*   Creation of Nonparameterized Project
-    
-    14:37
-    
-*   Creation of Parameterized Project
-    
-    09:55
-    
+### Section 19: JavaScript Basics
 
-### JavaScript Basics14 lectures • 1hr 59min
-
-*   Introduction to JavaScript
+0 / 14 | 1hr 59 min 0 of 14 lectures completed 1hr 59 min 
     
-    Preview      06:07
-    
-*   Prerequisite Needed
-    
-    Preview      04:23
-    
-*   Variables in JavaScript
-    
-    Preview      05:05
-    
-*   Datatypes in JavaScript
-    
-    Preview      08:19
-    
-*   Operators in JavaScript
-    
-    21:02
-    
-*   Conditional statement in JavaScript
-    
-    08:52
-    
-*   Switch Statement in JavaScript
-    
-    07:40
-    
-*   Loop in JavaScript
-    
-    12:02
-    
-*   Dynamic typing in JavaScript
-    
-    08:24
-    
-*   Arrays in JavaScript
-    
-    08:53
-    
-*   Objects in JavaScript
-    
-    09:17
-    
-*   Functions in JavaScript
-    
-    08:48
-    
-*   Scopes in JavaScript
-    
-    10:16
-    
-*   JavaScript Basics Project Download
-    
-    00:12
+    100. Introduction to JavaScript - 6 min
+    101. Prerequisite Needed - 4 min
+    102. Variables in JavaScript - 5 min
+    103. Datatypes in JavaScript - 8 min
+    104. Operators in JavaScript - 21 min
+    105. Conditional statement in JavaScript - 9 min
+    106. Switch Statement in JavaScript - 8 min
+    107. Loop in JavaScript - 12 min
+    108. Dynamic typing in JavaScript - 8 min
+    109. Arrays in JavaScript - 9 min
+    110. Objects in JavaScript - 9 min
+    111. Functions in JavaScript - 9 min
+    112. Scopes in JavaScript - 10 min
+    113. JavaScript Basics Project Download - 1 min
+    Resources    
+    *   JavaScript-Basics-UdemyCourse-main.zip
