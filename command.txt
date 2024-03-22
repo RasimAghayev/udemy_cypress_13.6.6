@@ -2,3 +2,6 @@ npm install --save-dev cypress
 
 npx cypress open
 
+npx cypress run
+
+
