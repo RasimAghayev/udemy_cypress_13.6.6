@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "open:cy": "cypress open",
+    "run:cy": "cypress run",
+    "smoke:cy": "cypress run --spec \"cypress\\e2e\\smoke\\*.cy.js\"",
+    "browser:cy": "cypress run --browser chrome",
+    "browser:headed:cy": "cypress run --browser chrome --headed",
+    "headed:cy": "cypress run --headed"
   },
   "keywords": [],
   "author": "",
