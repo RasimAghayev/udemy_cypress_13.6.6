@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-describe.only("Radio button Functionality", function () {
+describe("Radio button Functionality", function () {
   it("Handling different radio button", function () {
     //Basic radio button
     cy.visit("https://demos.jquerymobile.com/1.4.5/checkboxradio-radio/"); // visiting the website page
