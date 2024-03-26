@@ -1,0 +1,10 @@
+{
+  "valid": {
+    "email": "cypressdemo@gmail.com",
+    "password": "cypressdemo"
+  },
+  "invalid": {
+    "email": "cypressdemo@gmail.com",
+    "password": "cypressdemoq"
+  }
+}
