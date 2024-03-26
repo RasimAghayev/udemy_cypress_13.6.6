@@ -5,3 +5,4 @@ npx cypress open
 npx cypress run
 
 
+npm i -D cypress-xpath
