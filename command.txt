@@ -6,3 +6,5 @@ npx cypress run
 
 
 npm i -D cypress-xpath
+
+npm i -D xlsx
