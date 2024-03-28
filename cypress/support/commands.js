@@ -11,7 +11,7 @@
 //
 // -- This is a parent command --
 Cypress.Commands.add("conduItLogin", (email, password) => {
-  cy.visit("https://react-redux.realworld.io/"); // visiting the website
+  cy.visit("/"); // visiting the website
   cy.get('a[href="#login"').click(); // clicking on login button from
   cy.get('input[placeholder="Email"]').type(email); // typing email in input field
   cy.get('input[placeholder="Password"]').type(password); // typing password in password field

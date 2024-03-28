@@ -7,6 +7,7 @@
     "open:cy": "cypress open",
     "run:cy": "cypress run",
     "smoke:cy": "cypress run --spec \"cypress\\e2e\\smoke\\*.cy.js\"",
+    "test:cy": "cypress run --spec \"cypress\\e2e\\Tc15_CustomCommand.spec.cy.js\"",
     "browser:cy": "cypress run --browser chrome",
     "browser:headed:cy": "cypress run --browser chrome --headed",
     "headed:cy": "cypress run --headed"
