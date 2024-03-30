@@ -10,7 +10,8 @@
     "test:cy": "cypress run --spec \"cypress\\e2e\\Tc15_CustomCommand.spec.cy.js\"",
     "browser:cy": "cypress run --browser chrome",
     "browser:headed:cy": "cypress run --browser chrome --headed",
-    "headed:cy": "cypress run --headed"
+    "headed:cy": "cypress run --headed",
+    "dashboard:cy": "npx cypress run --record --key 9b15cfda-f84d-4bc8-bd7f-0244ee5ce53f"
   },
   "keywords": [],
   "author": "",
