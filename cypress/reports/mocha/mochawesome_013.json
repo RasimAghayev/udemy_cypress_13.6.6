@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-07T12:08:55.535Z",
+    "end": "2024-04-07T12:09:00.912Z",
+    "duration": 5377,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "350ad977-d430-45c2-810e-bd42beedc79c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Tc13_ReadExcel.spec.cy.js",
+      "file": "cypress\\e2e\\Tc13_ReadExcel.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "efbea1be-23c9-4984-810e-f07ee9d8637a",
+          "title": "Excel test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Condouit - Valid Credentials",
+              "fullTitle": "Excel test Condouit - Valid Credentials",
+              "timedOut": null,
+              "duration": 3383,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://react-redux.realworld.io/\"); // visiting the website\ncy.get('a[href=\"#login\"').click(); // clicking on login button from\ncy.get('input[placeholder=\"Email\"]').type(data[0].username); // typing email in input field\ncy.get('input[placeholder=\"Password\"]').type(data[0].password); // typing password in password field\ncy.get('button[type=\"submit\"]').click(); // submitting the form by clicking on submit button\ncy.get('a[href=\"#settings\"]').click(); // going to settings page by clicking on setting link\ncy.get(\".btn.btn-outline-danger\").click(); // logging out by clicking logout button",
+              "err": {},
+              "uuid": "5736de03-cf02-460f-b738-2d6e78641268",
+              "parentUUID": "efbea1be-23c9-4984-810e-f07ee9d8637a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Condouit - Invalid Credentials",
+              "fullTitle": "Excel test Condouit - Invalid Credentials",
+              "timedOut": null,
+              "duration": 1900,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://react-redux.realworld.io/\"); // visiting the website\ncy.get('a[href=\"#login\"').click(); // clicking on login button from\ncy.get('input[placeholder=\"Email\"]').type(data[1].username); // typing email in input field\ncy.get('input[placeholder=\"Password\"]').type(data[1].password); // typing password in password field\ncy.get('button[type=\"submit\"]').click(); // submitting the form by clicking on submit button\ncy.get(\".error-messages\").should(\"contain\", \"email or password is invalid\");",
+              "err": {},
+              "uuid": "70439c2f-dc95-4c23-a6ee-3be46cc05bdb",
+              "parentUUID": "efbea1be-23c9-4984-810e-f07ee9d8637a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5736de03-cf02-460f-b738-2d6e78641268",
+            "70439c2f-dc95-4c23-a6ee-3be46cc05bdb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5283,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

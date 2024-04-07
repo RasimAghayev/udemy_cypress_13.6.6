@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-07T12:09:35.352Z",
+    "end": "2024-04-07T12:09:40.424Z",
+    "duration": 5072,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ca3b241f-2462-4d10-aee4-02aab766086f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Tc15_CustomCommand.spec.cy.js",
+      "file": "cypress\\e2e\\Tc15_CustomCommand.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "04e5abbc-bc06-4fc6-8a9d-c074e861c40a",
+          "title": "Custom command test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Condouit - Valid Credentials",
+              "fullTitle": "Custom command test Condouit - Valid Credentials",
+              "timedOut": null,
+              "duration": 3299,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.conduItLogin(this.data.valid.email, this.data.valid.password);\ncy.get('a[href=\"#settings\"]').click(); // going to settings page by clicking on setting link\ncy.get(\".btn.btn-outline-danger\").click(); // logging out by clicking logout button",
+              "err": {},
+              "uuid": "be5654da-a684-45e7-9523-f4777feda019",
+              "parentUUID": "04e5abbc-bc06-4fc6-8a9d-c074e861c40a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Condouit - Invalid Credentials",
+              "fullTitle": "Custom command test Condouit - Invalid Credentials",
+              "timedOut": null,
+              "duration": 1684,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.conduItLogin(this.data.invalid.email, this.data.invalid.password);\ncy.get(\".error-messages\").should(\"contain\", \"email or password is invalid\");",
+              "err": {},
+              "uuid": "edf636ec-3401-4b0f-8b73-7d041c64be40",
+              "parentUUID": "04e5abbc-bc06-4fc6-8a9d-c074e861c40a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "be5654da-a684-45e7-9523-f4777feda019",
+            "edf636ec-3401-4b0f-8b73-7d041c64be40"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4983,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

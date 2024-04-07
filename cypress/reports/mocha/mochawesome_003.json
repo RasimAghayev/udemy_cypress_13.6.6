@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-07T12:05:56.587Z",
+    "end": "2024-04-07T12:06:01.696Z",
+    "duration": 5109,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e62d4fa6-7fbb-435c-830b-70fd4932e835",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Tc03_CheckBox.spec.cy.js",
+      "file": "cypress\\e2e\\Tc03_CheckBox.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0745e2b3-fa3b-42f7-9feb-5cdfc397b2a1",
+          "title": "CheckBox Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Handling different check boxes",
+              "fullTitle": "CheckBox Functionality Handling different check boxes",
+              "timedOut": null,
+              "duration": 2274,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Basic radio button\ncy.visit(\"https://demos.jquerymobile.com/1.4.5/checkboxradio-checkbox/\"); // visiting the website page\ncy.get(\"#checkbox-v-2a\").should(\"not.be.checked\").check({\n  force: true\n}).should(\"be.checked\");\ncy.get(\"#checkbox-v-2c\").should(\"not.be.checked\").check({\n  force: true\n}).should(\"be.checked\");",
+              "err": {},
+              "uuid": "0e73fa0c-6026-483d-93bb-4f81d28f88ab",
+              "parentUUID": "0745e2b3-fa3b-42f7-9feb-5cdfc397b2a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0e73fa0c-6026-483d-93bb-4f81d28f88ab"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2274,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
