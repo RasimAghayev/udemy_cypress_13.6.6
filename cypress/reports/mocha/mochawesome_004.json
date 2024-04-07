@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-04-07T12:06:11.886Z",
+    "end": "2024-04-07T12:06:46.250Z",
+    "duration": 34364,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9b3cd259-8368-4721-91d5-672b9b1fc8de",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Tc04_DropDown.spec.cy.js",
+      "file": "cypress\\e2e\\Tc04_DropDown.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9da15d97-5247-4e47-9e76-c3507ce8ee0a",
+          "title": "Dropdown Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Handling static dropdown",
+              "fullTitle": "Dropdown Functionality Handling static dropdown",
+              "timedOut": null,
+              "duration": 1281,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Basic radio button\ncy.visit(\"https://seleniumbase.io/demo_page\"); // visiting the website page\ncy.get(\"#mySelect\").select(\"Set to 100%\", {\n  force: true\n}).should(\"have.value\", \"100%\");",
+              "err": {},
+              "uuid": "c83e0ef3-a524-4a93-9f50-ae081d401ce2",
+              "parentUUID": "9da15d97-5247-4e47-9e76-c3507ce8ee0a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Handling dynamic dropdown",
+              "fullTitle": "Dropdown Functionality Handling dynamic dropdown",
+              "timedOut": null,
+              "duration": 13505,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/Tc04_DropDown.spec.cy.js/Dropdown Functionality -- Handling dynamic dropdown (failed).png\"",
+              "code": "//Basic radio button\ncy.visit(\"https://demos.telerik.com/aspnet-ajax/dropdownlist/examples/overview/defaultcs.aspx\"); // visiting the website page\ncy.get(\"#ctl00_ContentPlaceholder1_ctl00\").click({\n  force: true\n});\ncy.get(\".rddlItem\").contains(\"Ikura\").click({\n  force: true\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Ikura' within the element: <li.rddlItem> but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Ikura' within the element: <li.rddlItem> but never did.\n    at Context.eval (webpack://udemy_cypress_13.6.6/./cypress/e2e/Tc04_DropDown.spec.cy.js:17:24)",
+                "diff": null
+              },
+              "uuid": "ef0ce163-1111-41f5-86b7-001d44db62f5",
+              "parentUUID": "9da15d97-5247-4e47-9e76-c3507ce8ee0a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Handling Multiple dropdown",
+              "fullTitle": "Dropdown Functionality Handling Multiple dropdown",
+              "timedOut": null,
+              "duration": 7277,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Basic radio button\ncy.visit(\"https://demo.mobiscroll.com/jquery/select/multiple-select\"); // visiting the website page\ncy.get(\"#multiple-select-input\").click({\n  force: true\n});\ncy.get('div[class=\"mbsc-scroller-wheel-item mbsc-ios mbsc-ltr mbsc-wheel-item-checkmark mbsc-wheel-item-multi\"]').contains(\"Books\").click({\n  force: true\n});\ncy.get('div[class=\"mbsc-scroller-wheel-item mbsc-ios mbsc-ltr mbsc-wheel-item-checkmark mbsc-wheel-item-multi\"]').contains(\"Movies, Music & Games\").click({\n  force: true\n});",
+              "err": {},
+              "uuid": "897329cf-16be-41ab-9083-c09985552ef6",
+              "parentUUID": "9da15d97-5247-4e47-9e76-c3507ce8ee0a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c83e0ef3-a524-4a93-9f50-ae081d401ce2",
+            "897329cf-16be-41ab-9083-c09985552ef6"
+          ],
+          "failures": [
+            "ef0ce163-1111-41f5-86b7-001d44db62f5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 22063,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

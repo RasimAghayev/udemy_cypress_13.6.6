@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-07T12:06:54.920Z",
+    "end": "2024-04-07T12:07:03.113Z",
+    "duration": 8193,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "56793ad1-ed6d-40aa-a2f7-fa410da91fd4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Tc05_Alert.spec.cy.js",
+      "file": "cypress\\e2e\\Tc05_Alert.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4312fcdc-b197-4fe8-9417-e08e8e6e13bc",
+          "title": "Handling different Alerts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Simple Alert",
+              "fullTitle": "Handling different Alerts Simple Alert",
+              "timedOut": null,
+              "duration": 2897,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/javascript_alerts\"); // visiting the website page\ncy.contains(\"Click for JS Alert\").click();\ncy.on(\"window:alert\", str => {\n  expect(str).to.equal(\"I am a JS Alert\");\n});\ncy.get(\"#result\").should(\"contain\", \"You successfully clicked an alert\");",
+              "err": {},
+              "uuid": "3d077b4b-0070-4a71-a15c-e6cb5840ae11",
+              "parentUUID": "4312fcdc-b197-4fe8-9417-e08e8e6e13bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirmation Alert - Ok Button",
+              "fullTitle": "Handling different Alerts Confirmation Alert - Ok Button",
+              "timedOut": null,
+              "duration": 535,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/javascript_alerts\"); // visiting the website page\ncy.contains(\"Click for JS Confirm\").click();\ncy.on(\"window:confirm\", str => {\n  expect(str).to.equal(\"I am a JS Confirm\");\n});\ncy.get(\"#result\").should(\"contain\", \"You clicked: Ok\");",
+              "err": {},
+              "uuid": "e09bfa42-c1a8-420d-ad9c-8ea003f5ecc5",
+              "parentUUID": "4312fcdc-b197-4fe8-9417-e08e8e6e13bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirmation Alert - Cancel Button",
+              "fullTitle": "Handling different Alerts Confirmation Alert - Cancel Button",
+              "timedOut": null,
+              "duration": 532,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/javascript_alerts\"); // visiting the website page\ncy.contains(\"Click for JS Confirm\").click();\ncy.on(\"window:confirm\", str => {\n  expect(str).to.equal(\"I am a JS Confirm\");\n  return false;\n});\ncy.get(\"#result\").should(\"contain\", \"You clicked: Cancel\");",
+              "err": {},
+              "uuid": "b7fb8617-66ce-48ca-904d-648f98e9c49a",
+              "parentUUID": "4312fcdc-b197-4fe8-9417-e08e8e6e13bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Prompt Alert",
+              "fullTitle": "Handling different Alerts Prompt Alert",
+              "timedOut": null,
+              "duration": 483,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/javascript_alerts\"); // visiting the website page\ncy.window().then(function ($win) {\n  cy.stub($win, \"prompt\").returns(\"Hello Prompt Alert\");\n  cy.contains(\"Click for JS Prompt\").click();\n});\ncy.get(\"#result\").should(\"contain\", \"You entered: Hello Prompt Alert\");",
+              "err": {},
+              "uuid": "72f8644d-7729-4125-a47e-8d2a3398d7d9",
+              "parentUUID": "4312fcdc-b197-4fe8-9417-e08e8e6e13bc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3d077b4b-0070-4a71-a15c-e6cb5840ae11",
+            "e09bfa42-c1a8-420d-ad9c-8ea003f5ecc5",
+            "b7fb8617-66ce-48ca-904d-648f98e9c49a",
+            "72f8644d-7729-4125-a47e-8d2a3398d7d9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4447,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
