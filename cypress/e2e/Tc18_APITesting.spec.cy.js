@@ -18,4 +18,16 @@ describe("API testing", () => {
       expect(response.body.job).equal(user.job);
     });
   });
+  });
+  it("PUT API Testing", () => {
+    const user = {
+      name: "morpheus",
+      job: "leader",
+    };
+    cy.request("PUT", `${urlBase}/users`, user).then((response) => {
+      expect(response.status).equal(201);
+      expect(response.body.name).equal(user.name);
+      expect(response.body.job).equal(user.job);
+    });
+  });
 });
