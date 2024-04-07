@@ -1,6 +1,8 @@
 Course content
 --------------
 
+[![udemy_cypress_13.6.6](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/count/sjer8k&style=plastic&logo=cypress)](https://cloud.cypress.io/projects/sjer8k/runs)
+
 ### Section 1: Introduction to Cypress
 
 6 / 6 | 13 min 6 of 6 lectures completed 13 min 
