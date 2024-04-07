@@ -12,13 +12,13 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2024-04-07T11:36:57.047Z",
-    "end": "2024-04-07T11:37:03.421Z",
-    "duration": 6374
+    "start": "2024-04-07T11:54:32.778Z",
+    "end": "2024-04-07T11:54:39.432Z",
+    "duration": 6654
   },
   "results": [
     {
-      "uuid": "314dbd14-e6de-4c74-9e39-f0badd0f4f01",
+      "uuid": "9fd2dfe8-1e43-45dd-b57c-4ccfe5e7750d",
       "title": "",
       "fullFile": "cypress\\e2e\\Tc01_FirstScript.spec.cy.js",
       "file": "cypress\\e2e\\Tc01_FirstScript.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "11a455d7-ae51-402d-9785-3135ce7f2c5d",
+          "uuid": "f3940bca-4cda-4d08-b018-956094f31a0d",
           "title": "Login functionality",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,21 @@
               "title": "Login Test using Conduit",
               "fullTitle": "Login functionality Login Test using Conduit",
               "timedOut": null,
-              "duration": 6295,
+              "duration": 6597,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
-              "context": null,
+              "context": "\"assets/Tc01_FirstScript.spec.cy.js/Login functionality -- Login Test using Conduit (failed).png\"",
               "code": "cy.visit(\"https://react-redux.realworld.io/\"); // visiting the website\ncy.get('a[href=\"#logisn\"').click(); // clicking on login button from\ncy.get('input[placeholder=\"Email\"]').type(\"cypressdemo@gmail.com\"); // typing email in input field\ncy.get('input[placeholder=\"Password\"]').type(\"cypressdemo\"); // typing password in password field\ncy.get('button[type=\"submit\"]').click(); // submitting the form by clicking on submit button\ncy.get('a[href=\"#settings\"]').click(); // going to settings page by clicking on setting link\ncy.get(\".btn.btn-outline-danger\").click(); // logging out by clicking logout button",
               "err": {
                 "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `a[href=\"#logisn\"`, but never found it.",
                 "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `a[href=\"#logisn\"`, but never found it.\n    at Context.eval (webpack://udemy_cypress_13.6.6/./cypress/e2e/Tc01_FirstScript.spec.cy.js:6:7)",
                 "diff": null
               },
-              "uuid": "02b2faca-f95d-4d9c-856d-06ae7f91ca3f",
-              "parentUUID": "11a455d7-ae51-402d-9785-3135ce7f2c5d",
+              "uuid": "a17f1ea8-f215-4445-a697-357eaef8d99b",
+              "parentUUID": "f3940bca-4cda-4d08-b018-956094f31a0d",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "02b2faca-f95d-4d9c-856d-06ae7f91ca3f"
+            "a17f1ea8-f215-4445-a697-357eaef8d99b"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 6295,
+          "duration": 6597,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

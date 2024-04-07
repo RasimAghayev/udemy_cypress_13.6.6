@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   projectId: "sjer8k",
-  screenshotsFolder: "cypress/reports/mochareports/assets",
+  screenshotsFolder: "cypress\reportsmochareportsassets",
   reporter: "cypress-multi-reporters",
   reporterOptions: {
     reporterEnabled: "mochawesome",
@@ -14,7 +14,7 @@ module.exports = defineConfig({
       json: true,
     },
   },
-  screenshotOnRunFailure: true,
+  screenshotOnRunFailure: false,
   video: false,
   e2e: {
     baseUrl: "https://react-redux.realworld.io/",
