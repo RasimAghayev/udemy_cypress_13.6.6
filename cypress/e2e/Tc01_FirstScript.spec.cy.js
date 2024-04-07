@@ -3,7 +3,7 @@
 describe("Login functionality", function () {
   it("Login Test using Conduit", function () {
     cy.visit("https://react-redux.realworld.io/"); // visiting the website
-    cy.get('a[href="#login"').click(); // clicking on login button from
+    cy.get('a[href="#logisn"').click(); // clicking on login button from
     cy.get('input[placeholder="Email"]').type("cypressdemo@gmail.com"); // typing email in input field
     cy.get('input[placeholder="Password"]').type("cypressdemo"); // typing password in password field
     cy.get('button[type="submit"]').click(); // submitting the form by clicking on submit button

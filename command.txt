@@ -10,3 +10,14 @@ npm i -D cypress-xpath
 npm i -D xlsx
 
 npm i -D neat-csv@v5
+
+
+npm i -D mocha
+npm i -D cypress-multi-reporters
+npm i -D mochawesome
+npm i -D mochawesome-merge
+npm i -D mochawesome-report-generator
+
+
+npm i -D mocha cypress-multi-reporters mochawesome mochawesome-merge mochawesome-report-generator
+
