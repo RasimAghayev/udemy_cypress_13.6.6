@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  e2e:
+    image: cypress
+    build: .
+    container_name: cypress_docker
+    command: npx cypress run
+    volumes:
+      - ./:/app
