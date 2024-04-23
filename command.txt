@@ -21,3 +21,10 @@ npm i -D mochawesome-report-generator
 
 npm i -D mocha cypress-multi-reporters mochawesome mochawesome-merge mochawesome-report-generator
 
+docker run -it -v "%cd%":/e2e -w /e2e --entrypoint=cypress cypress/included:latest run
+docker run -it -v $PWD:/e2e -w /e2e --entrypoint=cypress cypress/included:latest run
+
+
+
+docker run -it -v "%cd%":/e2e -w /e2e --entrypoint=cypress cypress/included:latest run --browser chrome 
+
