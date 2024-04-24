@@ -29,3 +29,12 @@ docker run -it -v $PWD:/e2e -w /e2e --entrypoint=cypress cypress/included:latest
 docker run -it -v "%cd%":/e2e -w /e2e --entrypoint=cypress cypress/included:latest run --browser chrome 
 
 docker-compose -f docker-compose.yml
+
+
+
+npm install -D cypress-cucumber-preprocessor
+
+npm install -D multiple-cucumber-html-reporter
+
+
+node cucumber-html-report.js
