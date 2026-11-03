@@ -1,3 +1,5 @@
+![Views](https://hits.sh/github.com/RasimAghayev/udemy_cypress_13.6.6.svg?label=views&color=0e75b6)
+
 Course content
 --------------
 
