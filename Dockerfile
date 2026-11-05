@@ -5,11 +5,14 @@
 # demos.telerik.com, opensource-demo.orangehrmlive.com). The pipeline therefore stops
 # at base -> deps -> test-run -> test; no build/runtime stage is invented.
 #
-# base image pinned by exact tag AND digest, matching the version already
-# locked in package-lock.json (cypress@16.1.1) so this phase does not perform
-# an upgrade (that is Phase 6's job) — it only containerizes the current,
-# already-installed version.
-FROM cypress/included:16.1.1@sha256:e652cda84399aaf99c68d1d0322085dc3faa7ca9ace88d9bb4f0f045d2ce6764 AS base
+# base image pinned by exact tag AND digest. Phase 6 upgrade: bumped from
+# 16.1.1 to 16.2.1, the latest stable cypress/included tag on Docker Hub as
+# of 2026-11-05 (manifest-list digest below, re-resolved live, not carried
+# over from the Phase 2 snapshot). The locked npm `cypress` devDependency is
+# bumped to the matching 16.2.1 in the same step so the Docker-bundled
+# Cypress binary and the npm-installed one stay identical (Phase 2 flagged
+# the previous 16.1.1-image/16.2.1-latest split as a drift risk).
+FROM cypress/included:16.2.1@sha256:f1f257405a482bdf95358cd30202d9c3ac69f907d5e96342ae377b8111ff7a15 AS base
 
 # The image ships Chrome/Electron with an already-created non-root `node`
 # user (uid/gid 1000) and sets ENTRYPOINT ["cypress","run"] — verified at
