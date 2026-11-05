@@ -1,10 +1,20 @@
-version: '3.8'
+name: udemy_cypress_13.6.6-p5
 
+# This repo has no app of its own to serve — every spec drives a public demo
+# site directly (react-redux.realworld.io, demos.telerik.com,
+# opensource-demo.orangehrmlive.com). There is therefore no long-running
+# service, no healthcheck, and no port to publish: the 20000-20009 block
+# reserved for this repo in projects/info/state/ports.md is intentionally
+# left unused (brief: "use only these if you need any port at all").
 services:
   e2e:
-    image: cypress
-    build: .
-    container_name: cypress_docker
-    command: npx cypress run
-    volumes:
-      - ./:/app
+    build:
+      context: .
+      target: test-run
+    environment:
+      # Only consumed if a spec/script explicitly passes --record --key.
+      # Nothing in this compose file or the Makefile does; left here only so
+      # the already-correct CI pattern (.github/workflows/cypress.yml) has a
+      # local equivalent. Never put a real value in a committed .env file —
+      # see .env.example.
+      - CYPRESS_RECORD_KEY=${CYPRESS_RECORD_KEY:-}
