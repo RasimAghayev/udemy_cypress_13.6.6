@@ -9,7 +9,7 @@
 # locked in package-lock.json (cypress@16.1.1) so this phase does not perform
 # an upgrade (that is Phase 6's job) — it only containerizes the current,
 # already-installed version.
-FROM cypress/included:16.1.1@sha256:e652cda84399aaf99c68d1d0322085dc3faa7ca9ace88d9bb4f0f045d2ce6764 AS base
+FROM cypress/included:16.2.1@sha256:f1f257405a482bdf95358cd30202d9c3ac69f907d5e96342ae377b8111ff7a15 AS base
 
 # The image ships Chrome/Electron with an already-created non-root `node`
 # user (uid/gid 1000) and sets ENTRYPOINT ["cypress","run"] — verified at
