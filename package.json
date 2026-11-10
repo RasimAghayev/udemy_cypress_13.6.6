@@ -39,6 +39,6 @@
     "mochawesome-merge": "^5.0.0",
     "mochawesome-report-generator": "^6.2.0",
     "neat-csv": "^7.0.0",
-    "xlsx": "^0.18.5"
+    "@e965/xlsx": "^0.20.3"
   }
 }
