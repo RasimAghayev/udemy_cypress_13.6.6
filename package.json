@@ -10,7 +10,7 @@
     "browser:cy": "cypress run --browser chrome",
     "browser:headed:cy": "cypress run --browser chrome --headed",
     "headed:cy": "cypress run --headed",
-    "dashboard:cy": "npx cypress run --record --key 9b15cfda-f84d-4bc8-bd7f-0244ee5ce53f",
+    "dashboard:cy": "npx cypress run --record --key $CYPRESS_RECORD_KEY",
     "scripts:all": "cypress run",
     "scripts:one": "cypress run --spec \"cypress\\e2e\\Tc01_FirstScript.spec.cy.js\"",
     "clean:reports:wn": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mocha && mkdir cypress\\reports\\mochareports",
@@ -21,7 +21,10 @@
     "post-test": "npm run combine-reports && npm run generate-report",
     "test": "npm run scripts:one || npm run post-test",
     "report:ci": "npm run clean:reports && npm run dashboard:cy || true",
-    "report:local": "npm run clean:reports && npm run report:ci"
+    "report:local": "npm run clean:reports && npm run report:ci",
+    "lint": "eslint . --ext .js,.json",
+    "format": "prettier --write . --ignore-path .gitignore",
+    "format:check": "prettier --check . --ignore-path .gitignore"
   },
   "keywords": [],
   "author": "",
@@ -33,11 +36,16 @@
     "cypress": "^16.2.1",
     "cypress-multi-reporters": "^2.0.0",
     "cypress-xpath": "^2.0.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-cypress": "^4.1.0",
+    "eslint-plugin-json": "^5.0.0",
+    "globals": "^15.9.0",
     "mocha": "^12.0.3",
     "mochawesome": "^8.1.1",
     "mochawesome-merge": "^5.0.0",
     "mochawesome-report-generator": "^6.2.0",
     "neat-csv": "^7.0.0",
+    "prettier": "^3.3.3",
     "@e965/xlsx": "^0.20.3"
   }
 }

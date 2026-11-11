@@ -32,6 +32,7 @@ Fixes # (issue number)
 
 This project uses [Conventional Commits](https://www.conventionalcommits.org/).
 Please ensure your commits follow the format:
+
 - `feat: ...` for new features
 - `fix: ...` for bug fixes
 - `docs: ...` for documentation changes

@@ -20,12 +20,14 @@ to submit details privately. This ensures the vulnerability is not publicly
 disclosed until a fix is available.
 
 **What to include:**
+
 - A description of the vulnerability and its impact
 - Steps to reproduce the issue
 - Affected versions (if known)
 - Any suggested mitigations or fixes
 
 **What to expect:**
+
 - Acknowledgment within 7 days
 - Regular updates on the progress of the fix
 - Public disclosure coordinated after a fix is released
