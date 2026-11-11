@@ -37,7 +37,7 @@
     "cypress-multi-reporters": "^2.0.0",
     "cypress-xpath": "^2.0.1",
     "eslint": "^9.9.0",
-    "eslint-plugin-cypress": "^4.1.0",
+    "eslint-plugin-cypress": "^7.0.4",
     "eslint-plugin-json": "^5.0.0",
     "globals": "^15.9.0",
     "mocha": "^12.0.3",
