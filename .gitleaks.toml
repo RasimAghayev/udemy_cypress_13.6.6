@@ -1,0 +1,14 @@
+title = "gitleaks config for udemy_cypress_13.6.6"
+
+[allowlist]
+description = "Allowlisted items for this repo"
+# Allow the committed fixture JWT (public jwt.io example) - not a real secret
+paths = [
+  "cypress/fixtures/Login.json"
+]
+# Allow demo credentials for public sandbox sites
+regexes = [
+  "cypressdemo@gmail.com",
+  "cypressdemo",
+  "admin123"
+]
