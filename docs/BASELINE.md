@@ -53,27 +53,27 @@ Tests: 36   Passing: 19   Failing: 15   Pending: 0   Skipped: 2
 Duration: ~2m05s
 ```
 
-| Spec | Result | Tests | Pass | Fail | Skip |
-|---|---|---|---|---|---|
-| Tc01_FirstScript.spec.cy.js | FAIL | 1 | - | 1 | - |
-| Tc02_RadioButton.spec.cy.js | pass | 1 | 1 | - | - |
-| Tc03_CheckBox.spec.cy.js | pass | 1 | 1 | - | - |
-| Tc04_DropDown.spec.cy.js | pass | 3 | 3 | - | - |
-| Tc05_Alert.spec.cy.js | pass | 4 | 4 | - | - |
-| Tc06_WebTables.spec.cy.js | pass | 1 | 1 | - | - |
-| Tc07_Iframes.spec.cy.js | pass | 1 | 1 | - | - |
-| Tc08_xPath.spec.cy.js | FAIL | 1 | - | 1 | - |
-| Tc09_BrowserControl.spec.cy.js | FAIL | 1 | - | 1 | - |
-| Tc10_HooksBasic.spec.cy.js | pass | 3 | 3 | - | - |
-| Tc11_HooksImplentation.spec.cy.js | pass | 1 | 1 | - | - |
-| Tc12_FicturesTest.cpec.cy.js | FAIL | 2 | - | 2 | - |
-| Tc13_ReadExcel.spec.cy.js | FAIL | 2 | - | 2 | - |
-| Tc14_ReadCsv.spec.cy.js | FAIL | 2 | - | 2 | - |
-| Tc15.1_CustomCommand.spec.cy.js | FAIL | 2 | - | 2 | - |
-| Tc15_CustomCommand.spec.cy.js | FAIL | 2 | - | 2 | - |
-| Tc17_POM_Implementation.spec.cy.js | FAIL | 1 | - | 1 | - |
-| Tc18_APITesting.spec.cy.js | pass | 4 | 4 | - | - |
-| Tc19_Mock.spec.cy.js | FAIL | 3 | - | 1 | 2 |
+| Spec                               | Result | Tests | Pass | Fail | Skip |
+| ---------------------------------- | ------ | ----- | ---- | ---- | ---- |
+| Tc01_FirstScript.spec.cy.js        | FAIL   | 1     | -    | 1    | -    |
+| Tc02_RadioButton.spec.cy.js        | pass   | 1     | 1    | -    | -    |
+| Tc03_CheckBox.spec.cy.js           | pass   | 1     | 1    | -    | -    |
+| Tc04_DropDown.spec.cy.js           | pass   | 3     | 3    | -    | -    |
+| Tc05_Alert.spec.cy.js              | pass   | 4     | 4    | -    | -    |
+| Tc06_WebTables.spec.cy.js          | pass   | 1     | 1    | -    | -    |
+| Tc07_Iframes.spec.cy.js            | pass   | 1     | 1    | -    | -    |
+| Tc08_xPath.spec.cy.js              | FAIL   | 1     | -    | 1    | -    |
+| Tc09_BrowserControl.spec.cy.js     | FAIL   | 1     | -    | 1    | -    |
+| Tc10_HooksBasic.spec.cy.js         | pass   | 3     | 3    | -    | -    |
+| Tc11_HooksImplentation.spec.cy.js  | pass   | 1     | 1    | -    | -    |
+| Tc12_FicturesTest.cpec.cy.js       | FAIL   | 2     | -    | 2    | -    |
+| Tc13_ReadExcel.spec.cy.js          | FAIL   | 2     | -    | 2    | -    |
+| Tc14_ReadCsv.spec.cy.js            | FAIL   | 2     | -    | 2    | -    |
+| Tc15.1_CustomCommand.spec.cy.js    | FAIL   | 2     | -    | 2    | -    |
+| Tc15_CustomCommand.spec.cy.js      | FAIL   | 2     | -    | 2    | -    |
+| Tc17_POM_Implementation.spec.cy.js | FAIL   | 1     | -    | 1    | -    |
+| Tc18_APITesting.spec.cy.js         | pass   | 4     | 4    | -    | -    |
+| Tc19_Mock.spec.cy.js               | FAIL   | 3     | -    | 1    | 2    |
 
 Recorded exit code (`/app/.cypress-exit-code`): `15` (Cypress's own
 convention — the exit code equals the failed-test count, not a bare `1`).
@@ -181,18 +181,18 @@ only where critical paths have no tests"): every behavior this phase can
 observe (19 specs, 36 assertions, exercising logins, forms, tables,
 iframes, alerts, dropdowns, xpath, fixtures, custom commands, API
 requests, and intercept-based mocking) already has a test — the test
-*coverage* is not the gap here; the external *target* is. Writing a new
+_coverage_ is not the gap here; the external _target_ is. Writing a new
 test to characterize "react-redux.realworld.io returns 404" would just
 restate the `curl` output above, not characterize anything about this
 repo's own code. No new test was written.
 
 ## Image
 
-| Stage | On-disk size | Notes |
-|---|---|---|
-| `base` | 4.81 GB | `cypress/included:16.1.1`, unmodified Debian 13 (trixie) + Chrome/Electron/Firefox bundle |
-| `deps` | 4.89 GB | + 245 npm packages (`npm ci --ignore-scripts`) |
-| `test-run` | 4.90 GB | + full repo source + generated reports |
+| Stage      | On-disk size | Notes                                                                                     |
+| ---------- | ------------ | ----------------------------------------------------------------------------------------- |
+| `base`     | 4.81 GB      | `cypress/included:16.1.1`, unmodified Debian 13 (trixie) + Chrome/Electron/Firefox bundle |
+| `deps`     | 4.89 GB      | + 245 npm packages (`npm ci --ignore-scripts`)                                            |
+| `test-run` | 4.90 GB      | + full repo source + generated reports                                                    |
 
 `docker scout cves udemy-cypress-13-6-6:test-run`: **423 vulnerabilities
 across 140 packages** — 5 Critical, 121 High, 98 Medium, 197 Low, 2

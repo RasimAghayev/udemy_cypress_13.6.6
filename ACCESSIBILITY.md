@@ -11,14 +11,14 @@ accessibility of our software.
 
 We test accessibility in the following environments:
 
-| Environment | Status |
-|-------------|--------|
+| Environment                                      | Status |
+| ------------------------------------------------ | ------ |
 | Desktop browsers (Chrome, Firefox, Safari, Edge) | Tested |
-| Screen readers (NVDA, JAWS, VoiceOver) | Tested |
-| Keyboard-only navigation | Tested |
-| High contrast mode | Tested |
-| Zoom up to 200% | Tested |
-| Mobile browsers (iOS Safari, Android Chrome) | Tested |
+| Screen readers (NVDA, JAWS, VoiceOver)           | Tested |
+| Keyboard-only navigation                         | Tested |
+| High contrast mode                               | Tested |
+| Zoom up to 200%                                  | Tested |
+| Mobile browsers (iOS Safari, Android Chrome)     | Tested |
 
 ## Known Limitations
 

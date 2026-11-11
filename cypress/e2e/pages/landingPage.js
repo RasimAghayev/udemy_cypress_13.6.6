@@ -1,6 +1,6 @@
 class LandingPage {
   getSignIn() {
-    return "Sign in";
+    return 'Sign in';
   }
   clickSignInButton() {
     cy.contains(this.getSignIn()).click();

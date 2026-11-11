@@ -1,21 +1,21 @@
 class HomePage {
   getYourFeed() {
-    return "Your Feed";
+    return 'Your Feed';
   }
   getGlobalFeed() {
-    return "Global Feed";
+    return 'Global Feed';
   }
   getHome() {
-    return "Home";
+    return 'Home';
   }
   getNewPost() {
-    return "New Post";
+    return 'New Post';
   }
   getSettings() {
-    return "Settings";
+    return 'Settings';
   }
   checkYourFeedIsVisible() {
-    cy.contains(this.getYourFeed()).should("be.visible");
+    cy.contains(this.getYourFeed()).should('be.visible');
   }
   clickSettingsButton() {
     cy.contains(this.getSettings()).click();

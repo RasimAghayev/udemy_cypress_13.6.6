@@ -10,15 +10,15 @@ Actual pinned dependency: **Cypress 16.x** (the "13.6.6" in the name/course titl
 
 The suite runs inside Docker via `make`:
 
-| Target | What it does |
-|---|---|
-| `make build` | Builds the `test-run` image (deps installed, no test gate) |
-| `make test` | Builds the `test` image — **fails the build if the captured Cypress exit code is not `0`** (this is the Docker standard gate) |
-| `make verify` | `build` + `test` — the full gate |
-| `make run` | Ad-hoc live re-run against `test-run` (does not require the test gate) |
-| `make up` | Runs the suite once via `docker compose`, gated behind `verify` first |
-| `make shell` | Interactive shell inside the `test-run` image |
-| `make clean` | Removes images/containers (requires `CONFIRM=1`) |
+| Target        | What it does                                                                                                                  |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `make build`  | Builds the `test-run` image (deps installed, no test gate)                                                                    |
+| `make test`   | Builds the `test` image — **fails the build if the captured Cypress exit code is not `0`** (this is the Docker standard gate) |
+| `make verify` | `build` + `test` — the full gate                                                                                              |
+| `make run`    | Ad-hoc live re-run against `test-run` (does not require the test gate)                                                        |
+| `make up`     | Runs the suite once via `docker compose`, gated behind `verify` first                                                         |
+| `make shell`  | Interactive shell inside the `test-run` image                                                                                 |
+| `make clean`  | Removes images/containers (requires `CONFIRM=1`)                                                                              |
 
 Example:
 
@@ -37,8 +37,8 @@ Course content
 
 ### Section 1: Introduction to Cypress
 
-6 / 6 | 13 min 6 of 6 lectures completed 13 min 
-    
+6 / 6 | 13 min 6 of 6 lectures completed 13 min
+
     1. Important Note Before Starting Course - 1 min
     2. MUST WATCH - Before Enrolling the Course - 1 min
     3. Course Introduction - 2 min
@@ -48,29 +48,29 @@ Course content
 
 ### Section 2: Cypress Installation & Setup
 
-3 / 3 | 7 min 3 of 3 lectures completed 7 min 
-    
-    7. Prerequisites needed for Cypress installation - 3 min 
+3 / 3 | 7 min 3 of 3 lectures completed 7 min
+
+    7. Prerequisites needed for Cypress installation - 3 min
     8. Important Note: Cypress Version Update - 1 min
     9. Installation of Cypress - 4 min
 
 ### Section 3: Test Runner
 
-0 / 2 | 8 min 0 of 2 lectures completed  8 min 
-    
+0 / 2 | 8 min 0 of 2 lectures completed 8 min
+
     10. How to use Test Runner to execute cypress tests - 6 min
     11. Cross browser testing - 2 min
 
 ### Section 4: Folder Structure
 
-0 / 1 | 3 min 0 of 1 lecture completed 3 min 
-    
+0 / 1 | 3 min 0 of 1 lecture completed 3 min
+
     12. Folder Structure in Cypress - 3 min
 
 ### Section 5: Locator strategy & Write First test in Cypress
 
-0 / 6 | 37 min 0 of 6 lectures completed  37 min 
-    
+0 / 6 | 37 min 0 of 6 lectures completed 37 min
+
     13. Locator Strategies - 9 min
     14. Using Test Runner to Locate elements - 5 min
     15. Plugin to ease locator finding process - 4 min
@@ -80,15 +80,15 @@ Course content
 
 ### Section 6: Command Line Interface to run Cypress Tests
 
-0 / 2 | 19 min 0 of 2 lectures completed 19 min 
-    
+0 / 2 | 19 min 0 of 2 lectures completed 19 min
+
     19. Understanding Importance of Command Line - 2 min
     20. Executing test from Command Line - 18 min
 
 ### Section 7: Handling Basic UI Elements
 
-0 / 6 | 35 min 0 of 6 lectures completed 35 min 
-    
+0 / 6 | 35 min 0 of 6 lectures completed 35 min
+
     21. Radio Button - 9 min
     22. Code - RadioButton - 1 min
     23. Check boxes - 6 min
@@ -98,8 +98,8 @@ Course content
 
 ### Section 8: Handling Advanced UI Elements
 
-0 / 10 | 50 min 0 of 10 lectures completed 50 min 
-    
+0 / 10 | 50 min 0 of 10 lectures completed 50 min
+
     27. Handling all types of Alerts - 18 min
     28. Code - Alerts - 1 min
     29. Handling Web Tables - 13 min
@@ -113,8 +113,8 @@ Course content
 
 ### Section 9: Framework Designing - Part 1
 
-0 / 10 | 40 min 0 of 10 lectures completed 40 min 
-    
+0 / 10 | 40 min 0 of 10 lectures completed 40 min
+
     37. Hooks - Part 1 - 4 min
     38. Code - Hooks - Part 1 - 1 min
     39. Hooks - Part 2 - 9 min
@@ -128,39 +128,39 @@ Course content
 
 ### Section 10: Framework Designing - Part 2
 
-0 / 3 | 17 min 0 of 3 lectures completed 17 min 
-    
+0 / 3 | 17 min 0 of 3 lectures completed 17 min
+
     47. How to create Custom commands - 5 min
     48. Code - CustomCommands - 1 min
     49. Global Configurations setup - 11 min
 
 ### Section 11: Framework Designing - Part 3
 
-0 / 3 | 18 min 0 of 3 lectures completed 18 min 
-    
+0 / 3 | 18 min 0 of 3 lectures completed 18 min
+
     50. Page Object Model Importance - 2 min
     51. Implementing Page Object Model with current framework - 16 min
     52. Code - PageObjectModel - 1 min
 
 ### Section 12: Framework Designing - Part 4
 
-0 / 2 | 11 min 0 of 2 lectures completed 11 min 
-    
+0 / 2 | 11 min 0 of 2 lectures completed 11 min
+
     53. Dashboard featured in Cypress and its Limitations - 5 min
     54. Dashboard setup - 6 min
 
 ### Section 13: Framework Designing - Part 5
 
-0 / 3 | 26 min 0 of 3 lectures completed 26 min 
-    
+0 / 3 | 26 min 0 of 3 lectures completed 26 min
+
     55. Advantages of using Mochawesome Report - 3 min
     56. Setup Mochawesome Report - 15 min
     57. Add Failed test screenshot in Mochawesome report - 8 min
 
 ### Section 14: API Testing
 
-0 / 7 | 20 min 0 of 7 lectures completed 20 min 
-    
+0 / 7 | 20 min 0 of 7 lectures completed 20 min
+
     58. What is API testing ? - 3 min
     59. Rest API Introduction - 2 min
     60. GET Method - 7 min
@@ -171,19 +171,19 @@ Course content
 
 ### Section 15: Mocks and Stubs
 
-0 / 4 | 26 min 0 of 4 lectures completed 26 min 
-    
+0 / 4 | 26 min 0 of 4 lectures completed 26 min
+
     65. Advantages of using Mocks - 3 min
     66. Using mocks in real time example - 23 min
     67. Code: Mock Test - 1 min
     68. Cypress - Project Download - 1 min
-    Resources    
+    Resources
     *   Cypress-Udemy-Course-main.zip
 
 ### Section 16: Docker Integration with Cypress
 
-0 / 12 | 36 min 0 of 12 lectures completed 36 min 
-    
+0 / 12 | 36 min 0 of 12 lectures completed 36 min
+
     69. What is Docker - 3 min
     70. How to Install Docker - 1 min
     71. Additional Work after Docker Installation on Windows - 1 min
@@ -196,13 +196,13 @@ Course content
     78. Volume Mapping in Docker - 4 min
     79. Code - Volume Mapping - 1 min
     80. Cypress Docker - Project Download - 1 min
-    Resources    
+    Resources
     *   Cypress-Docker-Udemy-main.zip
 
 ### Section 17: Cucumber - BDD Framework
 
-0 / 13 | 53 min 0 of 13 lectures completed 53 min 
-    
+0 / 13 | 53 min 0 of 13 lectures completed 53 min
+
     81. Cucumber Introduction - 2 min
     82. Cucumber Installation - 5 min
     83. Important Note: Cypress Version Update - 1 min
@@ -216,13 +216,13 @@ Course content
     91. Add Failed test screenshot in HTML Report - 9 min
     92. Code - Screenshot in Cucumber report - 2 min
     93. Cypress - Cucumber Project Download - 1 min
-    Resources    
-    *   Cypress-Cucumber-Udemy-main.zip     
+    Resources
+    *   Cypress-Cucumber-Udemy-main.zip
 
 ### Section 18: CICD Integration
 
-0 / 6 | 39 min 0 of 6 lectures completed 39 min 
-    
+0 / 6 | 39 min 0 of 6 lectures completed 39 min
+
     94. What is CICD ? - 6 min
     95. Jenkins Introduction - 3 min
     96. Prerequisite before Installing Jenkins - 1 min
@@ -232,8 +232,8 @@ Course content
 
 ### Section 19: JavaScript Basics
 
-0 / 14 | 1hr 59 min 0 of 14 lectures completed 1hr 59 min 
-    
+0 / 14 | 1hr 59 min 0 of 14 lectures completed 1hr 59 min
+
     100. Introduction to JavaScript - 6 min
     101. Prerequisite Needed - 4 min
     102. Variables in JavaScript - 5 min
@@ -248,5 +248,5 @@ Course content
     111. Functions in JavaScript - 9 min
     112. Scopes in JavaScript - 10 min
     113. JavaScript Basics Project Download - 1 min
-    Resources    
+    Resources
     *   JavaScript-Basics-UdemyCourse-main.zip
