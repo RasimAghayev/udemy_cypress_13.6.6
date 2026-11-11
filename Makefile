@@ -1,7 +1,7 @@
 IMAGE := udemy-cypress-13-6-6
 COMPOSE := docker compose
 
-.PHONY: build test verify up run down logs shell lint format security clean
+.PHONY: build test verify up run down logs shell lint format format-check security clean
 
 ## build: image through the run itself (reports produced, pass/fail NOT yet gated)
 build:
@@ -34,18 +34,17 @@ logs:
 shell: build
 	docker run --rm -it --entrypoint sh $(IMAGE):test-run
 
-## lint / format: no linter or formatter (ESLint/Prettier/etc.) is
-## configured anywhere in this repo today (confirmed: package.json has no
-## such devDependency or script) — see docs/TECHNICAL_DEBT.md. Nothing to
-## run; not invented here (Phase 5 is Docker/Make only, adding tooling is
-## Phase 9's call per standing decision 3).
 lint:
-	@echo "No linter configured in this repo (see docs/TECHNICAL_DEBT.md) - nothing to run."
+	npm run lint
 
 format:
-	@echo "No formatter configured in this repo (see docs/TECHNICAL_DEBT.md) - nothing to run."
+	npm run format
+
+format-check:
+	npm run format:check
 
 security: build
+	docker run --rm --entrypoint sh $(IMAGE):test-run -c "npm audit --audit-level=high || true"
 	docker scout cves $(IMAGE):test-run
 
 ## clean: never deletes without an explicit confirm flag
