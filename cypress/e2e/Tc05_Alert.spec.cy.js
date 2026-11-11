@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 describe("Handling different Alerts", function () {
-  it.only("Simple Alert", function () {
+  it("Simple Alert", function () {
     cy.visit("https://the-internet.herokuapp.com/javascript_alerts"); // visiting the website page
     cy.contains("Click for JS Alert").click();
     cy.on("window:alert", (str) => {
@@ -10,7 +10,7 @@ describe("Handling different Alerts", function () {
     cy.get("#result").should("contain", "You successfully clicked an alert");
   });
 
-  it.only("Confirmation Alert - Ok Button", function () {
+  it("Confirmation Alert - Ok Button", function () {
     cy.visit("https://the-internet.herokuapp.com/javascript_alerts"); // visiting the website page
     cy.contains("Click for JS Confirm").click();
     cy.on("window:confirm", (str) => {
@@ -19,7 +19,7 @@ describe("Handling different Alerts", function () {
     cy.get("#result").should("contain", "You clicked: Ok");
   });
 
-  it.only("Confirmation Alert - Cancel Button", function () {
+  it("Confirmation Alert - Cancel Button", function () {
     cy.visit("https://the-internet.herokuapp.com/javascript_alerts"); // visiting the website page
     cy.contains("Click for JS Confirm").click();
     cy.on("window:confirm", (str) => {
@@ -29,7 +29,7 @@ describe("Handling different Alerts", function () {
     cy.get("#result").should("contain", "You clicked: Cancel");
   });
 
-  it.only("Prompt Alert", function () {
+  it("Prompt Alert", function () {
     cy.visit("https://the-internet.herokuapp.com/javascript_alerts"); // visiting the website page
     cy.window().then(function ($win) {
       cy.stub($win, "prompt").returns("Hello Prompt Alert");
