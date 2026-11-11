@@ -1,5 +1,35 @@
 ![Views](https://hits.sh/github.com/RasimAghayev/udemy_cypress_13.6.6.svg?label=views&color=0e75b6)
 
+# udemy_cypress_13.6.6 — Cypress E2E course repo
+
+This is a Udemy course's Cypress E2E test-automation teaching artifact ("Cypress V13.6.6 - Docker + Cucumber + Jenkins"). It is not an application with tests — every spec drives a public third-party demo site directly, and the test code itself is the deliverable.
+
+Actual pinned dependency: **Cypress 16.x** (the "13.6.6" in the name/course title is stale; see `docs/TECHNICAL_DEBT.md` #22).
+
+## How to run this suite
+
+The suite runs inside Docker via `make`:
+
+| Target | What it does |
+|---|---|
+| `make build` | Builds the `test-run` image (deps installed, no test gate) |
+| `make test` | Builds the `test` image — **fails the build if the captured Cypress exit code is not `0`** (this is the Docker standard gate) |
+| `make verify` | `build` + `test` — the full gate |
+| `make run` | Ad-hoc live re-run against `test-run` (does not require the test gate) |
+| `make up` | Runs the suite once via `docker compose`, gated behind `verify` first |
+| `make shell` | Interactive shell inside the `test-run` image |
+| `make clean` | Removes images/containers (requires `CONFIRM=1`) |
+
+Example:
+
+```bash
+make verify
+```
+
+The baseline is **red by design**: roughly half the specs target `https://react-redux.realworld.io/`, a demo site whose S3 bucket has been deleted (returns 404). Every failure is `cy.visit()` 404 on that dead external site — not a regression introduced in this repo. See `docs/BASELINE.md` for the full per-spec result table and root cause.
+
+No `.env` file is needed to build or run the baseline. `CYPRESS_RECORD_KEY` (Cypress Cloud recording) is documented as an empty placeholder in `.env.example`; nothing in this repo's Docker/Make setup reads or transmits it by default.
+
 Course content
 --------------
 
