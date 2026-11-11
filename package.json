@@ -2,7 +2,6 @@
   "name": "udemy_cypress_13.6.6",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "open:cy": "cypress open",
     "run:cy": "cypress run",

@@ -6,13 +6,11 @@ docs
 .env
 .env.*
 !.env.example
-command.txt
-newFile.js
+.vscode
+.idea
 cypress/reports
 cypress/videos
 cypress/screenshots
 cypress/downloads
 node_modules
 npm-debug.log*
-.vscode
-.idea
