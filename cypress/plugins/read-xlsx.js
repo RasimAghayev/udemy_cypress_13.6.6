@@ -1,5 +1,5 @@
 const fs = require("fs");
-const XLSX = require("xlsx");
+const XLSX = require("@e965/xlsx");
 const read = ({ file, sheet = "Sheet1" }) => {
   const buf = fs.readFileSync(file);
   const workbook = XLSX.read(buf, { type: "buffer" });
