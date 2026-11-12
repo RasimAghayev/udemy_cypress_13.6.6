@@ -26,6 +26,10 @@ Example:
 make verify
 ```
 
+## CI
+
+One GitHub Actions workflow (`.github/workflows/cypress.yml`) runs on `push` and `pull_request` to `main`, with `concurrency`/`cancel-in-progress`, least-privilege `permissions:`, and `timeout-minutes` per job. Jobs: `lint-and-format` (ESLint 9 + Prettier 3 check), `secret-scan` (gitleaks v3.0.0, SHA-pinned), `cypress-run` (cypress-io/github-action v7.4.9, SHA-pinned, 2-container matrix recording to Cypress Cloud via `secrets.CYPRESS_RECORD_KEY`), and `docker-verify` (`make verify`, the Docker test gate). All GitHub Actions are SHA-pinned (`actions/checkout` v4.2.2, `actions/setup-node` v4.1.0, `cypress-io/github-action` v7.4.9, `gitleaks/gitleaks-action` v3.0.0). The `docker-verify` job is red by design on the pre-existing dead-`react-redux.realworld.io` baseline (see `docs/BASELINE.md`) — an external-site failure, not a repo regression.
+
 The baseline is **red by design**: roughly half the specs target `https://react-redux.realworld.io/`, a demo site whose S3 bucket has been deleted (returns 404). Every failure is `cy.visit()` 404 on that dead external site — not a regression introduced in this repo. See `docs/BASELINE.md` for the full per-spec result table and root cause.
 
 No `.env` file is needed to build or run the baseline. `CYPRESS_RECORD_KEY` (Cypress Cloud recording) is documented as an empty placeholder in `.env.example`; nothing in this repo's Docker/Make setup reads or transmits it by default.

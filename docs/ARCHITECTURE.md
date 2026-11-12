@@ -53,7 +53,7 @@ This is intentional progression for a course (each lesson demonstrates the _next
 
 ## CI/CD
 
-One GitHub Actions workflow, `.github/workflows/cypress.yml`: `push`-triggered (no `pull_request` trigger — see Phase 10 plan), 2-way matrix via `cypress-io/github-action@v7.4.6` with `record: true`/`parallel: true` recording to Cypress Cloud using `secrets.CYPRESS_RECORD_KEY` (the env-var path the committed `package.json` `dashboard:cy` script should also use — see `docs/TECHNICAL_DEBT.md` #1). No explicit `actions/setup-node` step — Node version is whatever `ubuntu-latest` ships at run time, unpinned. No lint/secret-scan/build/image-scan stages — just the one Cypress-run job.
+One GitHub Actions workflow, `.github/workflows/cypress.yml`: triggered on `push` and `pull_request` to `main` (Phase 10), with `concurrency`/`cancel-in-progress`, least-privilege `permissions:` (`contents: read`, `security-events: write`), and `timeout-minutes` on every job. Jobs: `lint-and-format` (ESLint 9 + Prettier 3 check), `secret-scan` (gitleaks/gitleaks-action v3.0.0, SHA-pinned), `cypress-run` (cypress-io/github-action v7.4.9, SHA-pinned, 2-container matrix, `record: true`/`parallel: true` to Cypress Cloud via `secrets.CYPRESS_RECORD_KEY`), and `docker-verify` (`make verify`, the Docker test gate — red by design on the pre-existing dead-`react-redux.realworld.io` baseline, see `docs/BASELINE.md`). All four GitHub Actions are SHA-pinned (`actions/checkout` v4.2.2, `actions/setup-node` v4.1.0, `cypress-io/github-action` v7.4.9, `gitleaks/gitleaks-action` v3.0.0), and an explicit `actions/setup-node` step pins Node 26. The suite itself still runs headless in Docker (`cypress/included:16.2.1`, tag+digest pinned).
 
 ## Not present
 
