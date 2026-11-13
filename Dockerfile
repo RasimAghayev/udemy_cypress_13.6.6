@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.28
+# syntax=docker/dockerfile:1.29
 #
 # Phase 5 container baseline for a Cypress E2E *test* repo — there is no app
 # to build or serve here (the specs drive public demo sites: react-redux.realworld.io,
@@ -12,7 +12,7 @@
 # bumped to the matching 16.2.1 in the same step so the Docker-bundled
 # Cypress binary and the npm-installed one stay identical (Phase 2 flagged
 # the previous 16.1.1-image/16.2.1-latest split as a drift risk).
-FROM cypress/included:16.2.1@sha256:f1f257405a482bdf95358cd30202d9c3ac69f907d5e96342ae377b8111ff7a15 AS base
+FROM cypress/included:16.3.0@sha256:3efa8d156a094a6c13ddf3fba616e97f7492706685064b75a39823e1147eca97 AS base
 
 # The image ships Chrome/Electron with an already-created non-root `node`
 # user (uid/gid 1000) and sets ENTRYPOINT ["cypress","run"] — verified at
